@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28q — Контент. Система. Движение.</title>
+    <meta name="description" content="Студия полного цикла видео- и контент-продакшна. Производство, публикация и продвижение контента для digital-пространства.">
+    <meta name="author" content="28q Studio">
+    
+    <meta property="og:title" content="28q — Контент. Система. Движение.">
+    <meta property="og:description" content="Студия полного цикла видео- и контент-продакшна. Производство, публикация и продвижение контента для digital-пространства.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+</head>
+<body>
+    <div class="noise">
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="nav-container section-padding">
+                <a href="index.html" class="logo">28q</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="cases.html">Кейсы</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+                <button class="nav-toggle" onclick="toggleMobileMenu()">☰</button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="mobile-menu-close" onclick="toggleMobileMenu()">×</button>
+            <ul class="mobile-menu-list">
+                <li><a href="index.html" onclick="toggleMobileMenu()">Главная</a></li>
+                <li><a href="services.html" onclick="toggleMobileMenu()">Услуги</a></li>
+                <li><a href="cases.html" onclick="toggleMobileMenu()">Кейсы</a></li>
+                <li><a href="about.html" onclick="toggleMobileMenu()">О нас</a></li>
+                <li><a href="contact.html" onclick="toggleMobileMenu()">Контакты</a></li>
+            </ul>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="assets/hero/videohero.mp4" type="video/mp4">
+                Ваш браузер не поддерживает воспроизведение видео.
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="heading-primary hero-title">Контент для вашего успеха</h1>
+                <p class="text-body hero-subtitle">
+                    Студия полного цикла видео- и контент-продакшна.<br>
+                    Производство, публикация и продвижение контента для digital-пространства.
+                </p>
+                <div class="hero-cta">
+                    <a href="contact.html" class="cta-button">Заказать проект</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process-section">
+            <div class="section-padding">
+                <div class="text-center" style="margin-bottom: 4rem;">
+                    <h2 class="heading-secondary">Как мы работаем</h2>
+                    <p class="text-body" style="max-width: 600px; margin: 1.5rem auto 0;">
+                        Наш подход основан на системном понимании digital-среды и создании контента, который работает на результат.
+                    </p>
+                </div>
+                <div class="process-grid">
+                    <div class="process-item animate-fade-in-up hover-lift">
+                        <div class="process-number">01</div>
+                        <h3 class="process-title">Анализ</h3>
+                        <p class="process-description">Изучаем вашу аудиторию, конкурентов и digital-экосистему</p>
+                    </div>
+                    <div class="process-item animate-fade-in-up hover-lift" style="animation-delay: 0.1s;">
+                        <div class="process-number">02</div>
+                        <h3 class="process-title">Стратегия</h3>
+                        <p class="process-description">Разрабатываем контент-стратегию под ваши цели и задачи</p>
+                    </div>
+                    <div class="process-item animate-fade-in-up hover-lift" style="animation-delay: 0.2s;">
+                        <div class="process-number">03</div>
+                        <h3 class="process-title">Создание</h3>
+                        <p class="process-description">Производим качественный контент всех форматов и типов</p>
+                    </div>
+                    <div class="process-item animate-fade-in-up hover-lift" style="animation-delay: 0.3s;">
+                        <div class="process-number">04</div>
+                        <h3 class="process-title">Результат</h3>
+                        <p class="process-description">Анализируем эффективность и оптимизируем стратегию</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section">
+            <div class="section-padding">
+                <div class="text-center" style="margin-bottom: 4rem;">
+                    <h2 class="heading-secondary">Услуги</h2>
+                    <p class="text-body" style="max-width: 600px; margin: 1.5rem auto 0;">
+                        Полный спектр услуг для создания и продвижения контента в digital-среде
+                    </p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card animate-fade-in-up hover-lift">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14,2 14,8 20,8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10,9 9,9 8,9"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Текстовый контент</h3>
+                        <p class="service-description">Копирайтинг, SEO-тексты, техническая документация и контент для социальных сетей</p>
+                    </div>
+                    <div class="service-card animate-fade-in-up hover-lift" style="animation-delay: 0.1s;">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5"/>
+                                <polyline points="21,15 16,10 5,21"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Графический дизайн</h3>
+                        <p class="service-description">Иллюстрации, 3D-моделирование, AI-генерация изображений и брендинг</p>
+                    </div>
+                    <div class="service-card animate-fade-in-up hover-lift" style="animation-delay: 0.2s;">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="23 7 16 12 23 17 23 7"/>
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Видеопродакшн</h3>
+                        <p class="service-description">Полный цикл видеопроизводства от концепции до финального монтажа</p>
+                    </div>
+                    <div class="service-card animate-fade-in-up hover-lift" style="animation-delay: 0.3s;">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
+                                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Аудиопродакшн</h3>
+                        <p class="service-description">Подкасты, озвучка, аудиомонтаж и саунд-дизайн</p>
+                    </div>
+                    <div class="service-card animate-fade-in-up hover-lift" style="animation-delay: 0.4s;">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="6" y1="2" x2="6" y2="6"/>
+                                <line x1="18" y1="2" x2="18" y2="6"/>
+                                <line x1="6" y1="18" x2="6" y2="22"/>
+                                <line x1="18" y1="18" x2="18" y2="22"/>
+                                <rect x="2" y="6" width="20" height="12" rx="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Интерактивный контент</h3>
+                        <p class="service-description">Интерактивные опросы, геймификация и AR/VR контент</p>
+                    </div>
+                    <div class="service-card animate-fade-in-up hover-lift" style="animation-delay: 0.5s;">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="20" x2="18" y2="10"/>
+                                <line x1="12" y1="20" x2="12" y2="4"/>
+                                <line x1="6" y1="20" x2="6" y2="14"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Аналитика</h3>
+                        <p class="service-description">Веб-аналитика, мониторинг СМИ и оптимизация контент-стратегии</p>
+                    </div>
+                </div>
+                
+                <!-- Services CTA -->
+                <div class="text-center" style="margin-top: 3rem;">
+                    <a href="services.html" class="cta-button">Все услуги</a>
+                </div>
+            </div>
+        </section>
+
+         <!-- Digital Environment Section -->
+        <section class="digital-environment">
+            <div class="section-padding">
+                <h2 class="heading-secondary environment-title">Digital-среда</h2>
+                <p class="text-body environment-description">
+                    Мы работаем во всех ключевых digital-пространствах и понимаем специфику каждой платформы
+                </p>
+                <div class="environment-grid">
+                    <div class="environment-item hover-lift">
+                        <span>YouTube</span>
+                    </div>
+                    <div class="environment-item hover-lift">
+                        <span>MAX</span>
+                    </div>
+                    <div class="environment-item hover-lift">
+                        <span>TikTok</span>
+                    </div>
+                    <div class="environment-item hover-lift">
+                        <span>Telegram</span>
+                    </div>
+                    <div class="environment-item hover-lift">
+                        <span>VK</span>
+                    </div>
+                    <div class="environment-item hover-lift">
+                        <span>Podcasts</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cases Section -->
+        <section style="padding: 6rem 0; background: rgba(0, 0, 0, 0.3);">
+            <div class="section-padding">
+                <div class="text-center" style="margin-bottom: 4rem;">
+                    <h2 class="heading-secondary">Наши работы</h2>
+                    <p class="text-body" style="max-width: 600px; margin: 1.5rem auto 0;">
+                        Реальные проекты с измеримыми результатами
+                    </p>
+                </div>
+                
+                <div class="cases-grid">
+                    <!-- Кейс 1: Текст -->
+                    <div class="case-card hover-glow hover-lift animate-fade-in-up">
+                        <div class="case-image">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: rgba(255, 255, 255, 0.6);">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14,2 14,8 20,8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10,9 9,9 8,9"/>
+                            </svg>
+                        </div>
+                        <div class="case-content">
+                            <div class="case-tags">
+                                <span class="case-tag">Копирайтинг</span>
+                                <span class="case-tag">SEO</span>
+                            </div>
+                            <h3 class="case-title">Контент-стратегия для e-commerce</h3>
+                            <p class="service-description">Увеличение органического трафика интернет-магазина на 220%</p>
+                        </div>
+                    </div>
+
+                    <!-- Кейс 2: Видео -->
+                    <div class="case-card hover-glow hover-lift animate-fade-in-up" style="animation-delay: 0.1s;">
+                        <div class="case-image">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: rgba(255, 255, 255, 0.6);">
+                                <polygon points="23 7 16 12 23 17 23 7"/>
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                            </svg>
+                        </div>
+                        <div class="case-content">
+                            <div class="case-tags">
+                                <span class="case-tag">Видеопродакшн</span>
+                                <span class="case-tag">Реклама</span>
+                            </div>
+                            <h3 class="case-title">Рекламная кампания для финтех-стартапа</h3>
+                            <p class="service-description">Серия видеороликов привлекла 150K новых пользователей</p>
+                        </div>
+                    </div>
+
+                    <!-- Кейс 3: Графика -->
+                    <div class="case-card hover-glow hover-lift animate-fade-in-up" style="animation-delay: 0.2s;">
+                        <div class="case-image">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: rgba(255, 255, 255, 0.6);">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5"/>
+                                <polyline points="21,15 16,10 5,21"/>
+                            </svg>
+                        </div>
+                        <div class="case-content">
+                            <div class="case-tags">
+                                <span class="case-tag">Брендинг</span>
+                                <span class="case-tag">Дизайн</span>
+                            </div>
+                            <h3 class="case-title">Редизайн бренда ресторанной сети</h3>
+                            <p class="service-description">Полное обновление фирменного стиля для 15 ресторанов</p>
+                        </div>
+                    </div>
+
+                    <!-- Кейс 4: Аудио -->
+                    <div class="case-card hover-glow hover-lift animate-fade-in-up" style="animation-delay: 0.3s;">
+                        <div class="case-image">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: rgba(255, 255, 255, 0.6);">
+                                <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
+                                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
+                            </svg>
+                        </div>
+                        <div class="case-content">
+                            <div class="case-tags">
+                                <span class="case-tag">Подкаст</span>
+                                <span class="case-tag">Брендинг</span>
+                            </div>
+                            <h3 class="case-title">Корпоративный подкаст</h3>
+                            <p class="service-description">Запуск HR-подкаста с 10K+ прослушиваний в первый месяц</p>
+                        </div>
+                    </div>
+
+                    <!-- Кейс 5: Интерактив -->
+                    <div class="case-card hover-glow hover-lift animate-fade-in-up" style="animation-delay: 0.4s;">
+                        <div class="case-image">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: rgba(255, 255, 255, 0.6);">
+                                <line x1="6" y1="2" x2="6" y2="6"/>
+                                <line x1="18" y1="2" x2="18" y2="6"/>
+                                <line x1="6" y1="18" x2="6" y2="22"/>
+                                <line x1="18" y1="18" x2="18" y2="22"/>
+                                <rect x="2" y="6" width="20" height="12" rx="2"/>
+                            </svg>
+                        </div>
+                        <div class="case-content">
+                            <div class="case-tags">
+                                <span class="case-tag">AR</span>
+                                <span class="case-tag">Маркетинг</span>
+                            </div>
+                            <h3 class="case-title">AR-фильтр для бьюти-бренда</h3>
+                            <p class="service-description">Вирусный AR-фильтр с 2M+ использований</p>
+                        </div>
+                    </div>
+
+                    <!-- Кейс 6: Веб -->
+                    <div class="case-card hover-glow hover-lift animate-fade-in-up" style="animation-delay: 0.5s;">
+                        <div class="case-image">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: rgba(255, 255, 255, 0.6);">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="2" y1="12" x2="22" y2="12"/>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            </svg>
+                        </div>
+                        <div class="case-content">
+                            <div class="case-tags">
+                                <span class="case-tag">UX/UI</span>
+                                <span class="case-tag">Разработка</span>
+                            </div>
+                            <h3 class="case-title">Лендинг для SaaS-продукта</h3>
+                            <p class="service-description">Конвертирующий лендинг с повышением конверсии до 12%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cases CTA -->
+                <div class="text-center" style="margin-top: 3rem;">
+                    <a href="cases.html" class="cta-button">Все кейсы</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="section-padding">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>28q Studio</h3>
+                        <p class="text-body">Контент. Система. Движение.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Услуги</h3>
+                        <ul>
+                            <li><a href="services.html">Текстовый контент</a></li>
+                            <li><a href="services.html">Видеопродакшн</a></li>
+                            <li><a href="services.html">Графический дизайн</a></li>
+                            <li><a href="services.html">Аудиопродакшн</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Компания</h3>
+                        <ul>
+                            <li><a href="about.html">О нас</a></li>
+                            <li><a href="cases.html">Кейсы</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Контакты</h3>
+                        <ul>
+                            <li><a href="mailto:hello@28q.studio">hello@28q.studio</a></li>
+                            <li><a href="https://t.me/studio28q">@studio28q</a></li>
+                            <li><a href="tel:+79001234567">+7 (900) 123-45-67</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 28q Studio. Все права защищены.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+<script src="script.js"></script>
+</body>
+</html>

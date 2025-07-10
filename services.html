@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги — 28q Studio</title>
+    <meta name="description" content="Полный спектр услуг по созданию, продвижению и анализу контента для digital-среды. От концепции до результата.">
+    <meta name="author" content="28q Studio">
+    
+    <meta property="og:title" content="Услуги — 28q Studio">
+    <meta property="og:description" content="Полный спектр услуг по созданию, продвижению и анализу контента для digital-среды. От концепции до результата.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+</head>
+<body>
+    <div class="noise">
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="nav-container section-padding">
+                <a href="index.html" class="logo">28q</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html"class="active">Услуги</a></li>
+                    <li><a href="cases.html">Кейсы</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+                <button class="nav-toggle" onclick="toggleMobileMenu()">☰</button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="mobile-menu-close" onclick="toggleMobileMenu()">×</button>
+            <ul class="mobile-menu-list">
+                <li><a href="index.html" onclick="toggleMobileMenu()">Главная</a></li>
+                <li><a href="services.html" onclick="toggleMobileMenu()">Услуги</a></li>
+                <li><a href="cases.html" onclick="toggleMobileMenu()">Кейсы</a></li>
+                <li><a href="about.html" onclick="toggleMobileMenu()">О нас</a></li>
+                <li><a href="contact.html" onclick="toggleMobileMenu()">Контакты</a></li>
+            </ul>
+        </div>
+
+        <!-- Hero Section -->
+        <section style="padding-top: 8rem; padding-bottom: 4rem;">
+            <div class="section-padding">
+                <div class="text-center" style="margin-bottom: 4rem;">
+                    <h1 class="heading-primary" style="margin-bottom: 1.5rem;">Услуги</h1>
+                    <p class="text-body" style="max-width: 800px; margin: 0 auto;">
+                        Полный спектр услуг по созданию, продвижению и анализу контента для digital-среды. 
+                        От концепции до результата.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section">
+            <div class="section-padding">
+                <div class="services-grid">
+                    <div class="service-card animate-fade-in-up hover-lift">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14,2 14,8 20,8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10,9 9,9 8,9"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Текстовый контент</h3>
+                        <p class="service-description">Копирайтинг, SEO-тексты, техническая документация и контент для социальных сетей</p>
+                    </div>
+                    <div class="service-card animate-fade-in-up hover-lift" style="animation-delay: 0.1s;">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5"/>
+                                <polyline points="21,15 16,10 5,21"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Графический дизайн</h3>
+                        <p class="service-description">Иллюстрации, 3D-моделирование, AI-генерация изображений и брендинг</p>
+                    </div>
+                    <div class="service-card animate-fade-in-up hover-lift" style="animation-delay: 0.2s;">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="23 7 16 12 23 17 23 7"/>
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Видеопродакшн</h3>
+                        <p class="service-description">Полный цикл видеопроизводства от концепции до финального монтажа</p>
+                    </div>
+                    <div class="service-card animate-fade-in-up hover-lift" style="animation-delay: 0.3s;">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
+                                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Аудиопродакшн</h3>
+                        <p class="service-description">Подкасты, озвучка, аудиомонтаж и саунд-дизайн</p>
+                    </div>
+                    <div class="service-card animate-fade-in-up hover-lift" style="animation-delay: 0.4s;">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="6" y1="2" x2="6" y2="6"/>
+                                <line x1="18" y1="2" x2="18" y2="6"/>
+                                <line x1="6" y1="18" x2="6" y2="22"/>
+                                <line x1="18" y1="18" x2="18" y2="22"/>
+                                <rect x="2" y="6" width="20" height="12" rx="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Интерактивный контент</h3>
+                        <p class="service-description">Интерактивные опросы, геймификация и AR/VR контент</p>
+                    </div>
+                    <div class="service-card animate-fade-in-up hover-lift" style="animation-delay: 0.5s;">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="20" x2="18" y2="10"/>
+                                <line x1="12" y1="20" x2="12" y2="4"/>
+                                <line x1="6" y1="20" x2="6" y2="14"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Аналитика</h3>
+                        <p class="service-description">Веб-аналитика, мониторинг СМИ и оптимизация контент-стратегии</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Services Section -->
+        <section style="padding: 6rem 0; background: rgba(39, 39, 42, 0.3);">
+            <div class="section-padding">
+                
+                <!-- Текстовый контент -->
+                <div style="max-width: 1200px; margin: 0 auto 6rem;">
+                    <h2 class="heading-secondary text-center" style="margin-bottom: 3rem;">Текстовый контент</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">Рерайт</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Переработка и улучшение готовых текстов</p>
+                        </div>
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14,2 14,8 20,8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">Копирайт</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Создание продающих текстов с нуля</p>
+                        </div>
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">Статьи</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Написание статей на различные темы</p>
+                        </div>
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14,2 14,8 20,8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10,9 9,9 8,9"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">Транскрибация</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Перевод аудио и видео в текстовый формат</p>
+                        </div>
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">FAQ</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Создание разделов "Часто задаваемые вопросы" для вашего сайта</p>
+                        </div>
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14,2 14,8 20,8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10,9 9,9 8,9"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">Справочные материалы</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Подготовка информационных и справочных материалов</p>
+                        </div>
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 1v6m0 6v6"/>
+                                <path d="m15.5 8.5-3 3-3-3"/>
+                                <path d="m8.5 15.5 3-3 3 3"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">AI-текст</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Генерация текстов с помощью искусственного интеллекта</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Графический контент -->
+                <div style="max-width: 1200px; margin: 0 auto 6rem;">
+                    <h2 class="heading-secondary text-center" style="margin-bottom: 3rem;">Графический контент</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5"/>
+                                <polyline points="21,15 16,10 5,21"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">Иллюстрации</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Создание уникальных иллюстраций</p>
+                        </div>
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">CG графика</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Разработка графики с помощью компьютерных технологий</p>
+                        </div>
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 1v6m0 6v6"/>
+                                <path d="m15.5 8.5-3 3-3-3"/>
+                                <path d="m8.5 15.5 3-3 3 3"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">AI графика</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Генерация изображений с использованием искусственного интеллекта</p>
+                        </div>
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <path d="M9 12l2 2 4-4"/>
+                                <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">Презентации</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Создание профессиональных презентаций</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Видео контент -->
+                <div style="max-width: 1200px; margin: 0 auto 6rem;">
+                    <h2 class="heading-secondary text-center" style="margin-bottom: 3rem;">Видео контент</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <path d="M23 7l-7 5 7 5V7z"/>
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">Съемки</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Организация и проведение съемок</p>
+                        </div>
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <path d="M12 20h9"/>
+                                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">Монтаж</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Обработка отснятого видеоматериала</p>
+                        </div>
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">SDFX для видео</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Создание видео с помощью компьютерной графики</p>
+                        </div>
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <path d="M5 3l14 9-14 9V3z"/>
+                                <path d="M1 12h4"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">Трансляции</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Организация онлайн-трансляций</p>
+                        </div>
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <path d="M23 7l-7 5 7 5V7z"/>
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">Видеопродакшн</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Полный цикл производства видео</p>
+                        </div>
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">Virtual production</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Использование виртуальной реальности при производстве контента</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Аудио контент -->
+                <div style="max-width: 1200px; margin: 0 auto 6rem;">
+                    <h2 class="heading-secondary text-center" style="margin-bottom: 3rem;">Аудио контент</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                                <line x1="12" y1="19" x2="12" y2="23"/>
+                                <line x1="8" y1="23" x2="16" y2="23"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">Озвучка</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Запись голоса для аудио и видео материалов</p>
+                        </div>
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <circle cx="12" cy="12" r="2"/>
+                                <path d="M20.94 11A8.994 8.994 0 0 0 13 3.06V1a10.99 10.99 0 0 1 8.94 10h-1zm0 2A8.994 8.994 0 0 1 13 20.94V23a10.99 10.99 0 0 0 8.94-10h-1zM3.06 13A8.994 8.994 0 0 0 11 20.94V23a10.99 10.99 0 0 1-8.94-10h1zm0-2A8.994 8.994 0 0 1 11 3.06V1a10.99 10.99 0 0 0-8.94 10h1z"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">Подкасты</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Создание и запись подкастов</p>
+                        </div>
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14,2 14,8 20,8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10,9 9,9 8,9"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">Транскрибация</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Перевод аудио в текстовый формат</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Интерактивный контент -->
+                <div style="max-width: 1200px; margin: 0 auto 6rem;">
+                    <h2 class="heading-secondary text-center" style="margin-bottom: 3rem;">Интерактивный контент</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14,2 14,8 20,8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10,9 9,9 8,9"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">Опросы</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Разработка онлайн-опросов</p>
+                        </div>
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <path d="M3 3v18h18"/>
+                                <path d="M18.7 8a3 3 0 0 0-5.4 0"/>
+                                <path d="M16.4 15a2 2 0 0 0-3.6 0"/>
+                                <path d="M15.1 18a1 1 0 0 0-1.8 0"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">Квесты</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Создание интерактивных квестов</p>
+                        </div>
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <path d="M3 3v18h18"/>
+                                <path d="M7 12h10"/>
+                                <path d="M7 8h6"/>
+                                <path d="M7 16h4"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">Чек-листы</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Разработка интерактивных чек-листов</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Образовательный контент -->
+                <div style="max-width: 1200px; margin: 0 auto;">
+                    <h2 class="heading-secondary text-center" style="margin-bottom: 3rem;">Образовательный контент</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">Разработка курсов</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Создание онлайн-курсов и учебных материалов</p>
+                        </div>
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                            </svg>
+                            <h3 class="service-title" style="font-size: 1.125rem; margin-bottom: 0.5rem;">Образовательный контент</h3>
+                            <p class="service-description" style="font-size: 0.875rem;">Создание обучающих и учебных материалов</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="section-padding">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>28q Studio</h3>
+                        <p style="color: var(--studio-gray); margin-top: 1rem;">
+                            Студия digital-контента полного цикла. Создаем качественный контент для современного мира.
+                        </p>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3>Услуги</h3>
+                        <ul>
+                            <li><a href="#text">Текстовый контент</a></li>
+                            <li><a href="#design">Графический дизайн</a></li>
+                            <li><a href="#video">Видео контент</a></li>
+                            <li><a href="#audio">Аудио контент</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3>Компания</h3>
+                        <ul>
+                            <li><a href="about.html">О нас</a></li>
+                            <li><a href="cases.html">Кейсы</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3>Контакты</h3>
+                        <ul>
+                            <li><a href="mailto:hello@28q.studio">hello@28q.studio</a></li>
+                            <li><a href="tel:+7900000000">+7 (900) 000-00-00</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2024 28q Studio. Все права защищены.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

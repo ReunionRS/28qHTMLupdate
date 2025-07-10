@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас — 28q Studio</title>
+    <meta name="description" content="Мы — команда профессионалов, которые превращают идеи в работающий контент. Наш подход основан на понимании digital-среды как единой экосистемы.">
+    <meta name="author" content="28q Studio">
+    
+    <meta property="og:title" content="О нас — 28q Studio">
+    <meta property="og:description" content="Мы — команда профессионалов, которые превращают идеи в работающий контент. Наш подход основан на понимании digital-среды как единой экосистемы.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+</head>
+<body>
+    <div class="noise">
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="nav-container section-padding">
+                <a href="index.html" class="logo">28q</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="cases.html">Кейсы</a></li>
+                    <li><a href="about.html" class="active">О нас</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+                <button class="nav-toggle" onclick="toggleMobileMenu()">☰</button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="mobile-menu-close" onclick="toggleMobileMenu()">×</button>
+            <ul class="mobile-menu-list">
+                <li><a href="index.html" onclick="toggleMobileMenu()">Главная</a></li>
+                <li><a href="services.html" onclick="toggleMobileMenu()">Услуги</a></li>
+                <li><a href="cases.html" onclick="toggleMobileMenu()">Кейсы</a></li>
+                <li><a href="about.html" onclick="toggleMobileMenu()">О нас</a></li>
+                <li><a href="contact.html" onclick="toggleMobileMenu()">Контакты</a></li>
+            </ul>
+        </div>
+
+        <!-- Hero Section -->
+        <section style="padding-top: 8rem; padding-bottom: 6rem;">
+            <div class="section-padding">
+                <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+                    <h1 class="heading-primary" style="margin-bottom: 2rem;">О компании</h1>
+                    
+                    <div style="max-width: 800px; margin: 0 auto;">
+                        <p class="text-body" style="margin-bottom: 1.5rem; font-size: 1.125rem;">
+                            Мы — креативная команда профессионалов, объединенных общей страстью к инновациям и 
+                            стремлением к совершенству. Наша миссия — помогать нашим клиентам достигать 
+                            высочайших результатов, применяя самые передовые технологии и подходы в области 
+                            создания контента.
+                        </p>
+                        <p class="text-body" style="margin-bottom: 3rem; font-size: 1.125rem;">
+                            Мы верим, что каждый проект уникален, и подходим к его реализации с полной отдачей, 
+                            предлагая решения, которые не только отвечают требованиям, но и превосходят ожидания.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How We Work Section -->
+        <section style="padding: 6rem 0; background: rgba(39, 39, 42, 0.3);">
+            <div class="section-padding">
+                <div style="max-width: 1200px; margin: 0 auto;">
+                    <h2 class="heading-secondary text-center" style="margin-bottom: 4rem;">Как мы работаем</h2>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem;">
+                        <!-- Понимание задач -->
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1.5rem; color: var(--studio-light-gray);">
+                                <circle cx="12" cy="12" r="3"/>
+                                <circle cx="12" cy="1" r="1"/>
+                                <circle cx="12" cy="23" r="1"/>
+                                <circle cx="4.22" cy="4.22" r="1"/>
+                                <circle cx="19.78" cy="19.78" r="1"/>
+                                <circle cx="1" cy="12" r="1"/>
+                                <circle cx="23" cy="12" r="1"/>
+                                <circle cx="4.22" cy="19.78" r="1"/>
+                                <circle cx="19.78" cy="4.22" r="1"/>
+                            </svg>
+                            <h3 class="service-title" style="margin-bottom: 1rem;">Понимание задач</h3>
+                            <p class="service-description">
+                                Первый шаг — это глубокое погружение в ваш бизнес и понимание ваших целей и задач.
+                            </p>
+                        </div>
+
+                        <!-- Разработка идей -->
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1.5rem; color: var(--studio-light-gray);">
+                                <path d="M9 12l2 2 4-4"/>
+                                <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/>
+                                <path d="M16 12a4 4 0 0 0-8 0"/>
+                            </svg>
+                            <h3 class="service-title" style="margin-bottom: 1rem;">Разработка идей</h3>
+                            <p class="service-description">
+                                Мы генерируем креативные концепции, которые помогут вам выделиться на рынке.
+                            </p>
+                        </div>
+
+                        <!-- Проектирование -->
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1.5rem; color: var(--studio-light-gray);">
+                                <polygon points="12,2 22,8.5 22,15.5 12,22 2,15.5 2,8.5 12,2"/>
+                                <line x1="12" y1="22" x2="12" y2="15.5"/>
+                                <polyline points="22,8.5 12,15.5 2,8.5"/>
+                            </svg>
+                            <h3 class="service-title" style="margin-bottom: 1rem;">Проектирование</h3>
+                            <p class="service-description">
+                                Разрабатываем детальный план действий, включающий все этапы производства.
+                            </p>
+                        </div>
+
+                        <!-- Производство контента -->
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1.5rem; color: var(--studio-light-gray);">
+                                <polygon points="23 7 16 12 23 17 23 7"/>
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                            </svg>
+                            <h3 class="service-title" style="margin-bottom: 1rem;">Производство контента</h3>
+                            <p class="service-description">
+                                На этом этапе наша команда реализует проект, применяя все свои навыки и опыт.
+                            </p>
+                        </div>
+
+                        <!-- Контроль качества -->
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1.5rem; color: var(--studio-light-gray);">
+                                <path d="M9 12l2 2 4-4"/>
+                                <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/>
+                            </svg>
+                            <h3 class="service-title" style="margin-bottom: 1rem;">Контроль качества</h3>
+                            <p class="service-description">
+                                Каждый проект проходит тщательную проверку перед передачей клиенту.
+                            </p>
+                        </div>
+
+                        <!-- Поддержка и сотрудничество -->
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1.5rem; color: var(--studio-light-gray);">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                            <h3 class="service-title" style="margin-bottom: 1rem;">Поддержка и сотрудничество</h3>
+                            <p class="service-description">
+                                Мы продолжаем поддерживать проекты и развивать долгосрочные партнерские отношения.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section style="padding: 6rem 0;">
+            <div class="section-padding">
+                <div style="max-width: 1200px; margin: 0 auto;">
+                    <h2 class="heading-secondary text-center" style="margin-bottom: 4rem;">Почему именно мы?</h2>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem;">
+                        <!-- Профессиональная команда -->
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1.5rem; color: var(--studio-light-gray);">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                            <h3 class="service-title" style="margin-bottom: 1rem;">Профессиональная команда</h3>
+                            <p class="service-description">
+                                Команда опытных специалистов, любящих свое дело.
+                            </p>
+                        </div>
+
+                        <!-- Инновационный подход -->
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1.5rem; color: var(--studio-light-gray);">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                            <h3 class="service-title" style="margin-bottom: 1rem;">Инновационный подход</h3>
+                            <p class="service-description">
+                                Использование передовых технологий и нестандартных решений.
+                            </p>
+                        </div>
+
+                        <!-- Высокое качество -->
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1.5rem; color: var(--studio-light-gray);">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2"/>
+                            </svg>
+                            <h3 class="service-title" style="margin-bottom: 1rem;">Высокое качество</h3>
+                            <p class="service-description">
+                                Строгий контроль качества на каждом этапе работы.
+                            </p>
+                        </div>
+
+                        <!-- Персональный подход -->
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1.5rem; color: var(--studio-light-gray);">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            <h3 class="service-title" style="margin-bottom: 1rem;">Персональный подход</h3>
+                            <p class="service-description">
+                                Мы ценим каждого клиента и находим индивидуальные решения.
+                            </p>
+                        </div>
+
+                        <!-- Соблюдение сроков -->
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1.5rem; color: var(--studio-light-gray);">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                            <h3 class="service-title" style="margin-bottom: 1rem;">Соблюдение сроков</h3>
+                            <p class="service-description">
+                                Мы гарантируем выполнение проектов точно в срок.
+                            </p>
+                        </div>
+
+                        <!-- Доступные цены -->
+                        <div class="service-card hover-glow hover-lift" style="padding: 2rem; text-align: center;">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1.5rem; color: var(--studio-light-gray);">
+                                <line x1="12" y1="1" x2="12" y2="23"/>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                            </svg>
+                            <h3 class="service-title" style="margin-bottom: 1rem;">Доступные цены</h3>
+                            <p class="service-description">
+                                Мы предлагаем высокое качество по разумной цене.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section style="padding: 6rem 0; background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(39, 39, 42, 0.9));">
+            <div class="section-padding">
+                <div style="max-width: 1000px; margin: 0 auto;">
+                    <h2 class="heading-secondary text-center" style="margin-bottom: 4rem;">Наши достижения</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; text-align: center;">
+                        <div class="hover-lift">
+                            <div style="font-family: 'Space Grotesk', sans-serif; font-size: 4rem; font-weight: 700; margin-bottom: 1rem; color: #ffffff;">100+</div>
+                            <p class="text-body" style="font-size: 1.125rem;">Завершенных проектов</p>
+                        </div>
+                        <div class="hover-lift">
+                            <div style="font-family: 'Space Grotesk', sans-serif; font-size: 4rem; font-weight: 700; margin-bottom: 1rem; color: #ffffff;">3</div>
+                            <p class="text-body" style="font-size: 1.125rem;">Года на рынке</p>
+                        </div>
+                        <div class="hover-lift">
+                            <div style="font-family: 'Space Grotesk', sans-serif; font-size: 4rem; font-weight: 700; margin-bottom: 1rem; color: #ffffff;">95%</div>
+                            <p class="text-body" style="font-size: 1.125rem;">Клиентов возвращаются</p>
+                        </div>
+                        <div class="hover-lift">
+                            <div style="font-family: 'Space Grotesk', sans-serif; font-size: 4rem; font-weight: 700; margin-bottom: 1rem; color: #ffffff;">24/7</div>
+                            <p class="text-body" style="font-size: 1.125rem;">Поддержка клиентов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="section-padding">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>28q Studio</h3>
+                        <p class="text-body">Контент. Система. Движение.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Услуги</h3>
+                        <ul>
+                            <li><a href="services.html">Текстовый контент</a></li>
+                            <li><a href="services.html">Видеопродакшн</a></li>
+                            <li><a href="services.html">Графический дизайн</a></li>
+                            <li><a href="services.html">Аудиопродакшн</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Компания</h3>
+                        <ul>
+                            <li><a href="about.html">О нас</a></li>
+                            <li><a href="cases.html">Кейсы</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Контакты</h3>
+                        <ul>
+                            <li><a href="mailto:hello@28q.studio">hello@28q.studio</a></li>
+                            <li><a href="https://t.me/studio28q">@studio28q</a></li>
+                            <li><a href="tel:+79001234567">+7 (900) 123-45-67</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 28q Studio. Все права защищены.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
